@@ -1,0 +1,453 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --boz: #f2f2f2;
+    --mavi:#0071E3;
+}
+.header1{
+    background-color: var(--boz);
+}
+.container{
+    padding: 0 3%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 3%;
+    img{
+        width: 20px;
+    }
+}
+.search img{
+    margin: 0 5px;
+    width: 16px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#inp{
+    display: none;
+}
+.accmenu{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    background-color: white;
+    transition: .3s;
+    menu{
+        padding: 20px 30px;
+        li{
+            padding: 10px 0;
+            a{
+                font-size: 19.2px;
+            }
+        }
+    }
+    
+}
+.new{
+    font: .8em Arial, Helvetica, sans-serif;
+    color: #BF4800;
+}
+.close {
+    text-align: right;
+    margin: 20px;
+    padding: 10px;
+}
+#inp:checked~.accmenu{
+    left: 0;
+    transition: .3s;
+}
+.slider {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    overflow-x: scroll;
+    div{
+        text-align: center;
+        padding: 10px;
+        p{
+            font: 11.2px Arial, Helvetica, sans-serif;
+        }
+        
+    }
+
+
+}
+.header3{
+    background-color: var(--boz);
+    text-align: center;
+    padding: 20px 0;
+    p{
+        font-size: 20.8px;
+    }
+    
+}
+.shop{
+    display: inline-block;
+    width: max-content;
+    padding: 15px 0;
+    color: var(--mavi);
+    
+}
+
+
+.shop::after{
+    display: block;
+    content: "";
+    width: 0px;
+    bottom: 0px;
+    left: 0;
+    height: 3px;
+    background: transparent;
+    
+}
+
+.shop:active::after{
+    animation: example 1s  linear forwards ;
+}
+
+@keyframes example {
+    0% {
+        background: transparent;
+        width: 0%;
+    }
+    100% {
+        background: linear-gradient(90deg, rgba(255,255,0,1) 25%, rgba(255,165,0,1) 50%, rgba(0,128,0,1) 75%, rgba(0,0,255,1) 100%);
+        width:100% 
+    }
+
+}
+.titaniumbasliq{
+    background-color: #000;
+    text-align: center;
+    padding: 40px 0;
+   
+}
+.titanium{
+    background: url('../img/titanium.jpeg') center/ contain no-repeat;
+    height: 40px;
+    padding: 15px 0;
+}
+.titaniumpic{
+    background: url('../img/titanium-mobile.jpeg') center/ contain no-repeat;
+    height: 50vh;
+    margin: 10px 0;
+}
+h6{
+    font: 400 1.1em Arial;
+    margin: 10px 0;
+    color: #8b887e;
+}
+.sec1{
+    margin: 15px 0;
+    color: #fff;
+    margin: 15px 0;
+}
+.btn{
+    background-color: var(--mavi);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    margin: 10px 0;
+    border-radius: 30px;
+}
+.newphoria{
+    text-align: center;
+    padding: 40px 0;
+
+}
+.sec2{
+    margin: 15px 0;
+    color: #000;
+}
+h2{
+    font: 500 1.8em / 0.8 Arial;
+    margin: 20px 0;
+}
+.newphoriapic{
+    background: url('../img/newphoria.jpeg') center / contain no-repeat;
+    height: 20vh;
+    margin: 10px;
+}
+#love{
+    background-color: #fbfbfb;
+    text-align: center;
+    padding: 40px 0;
+    h2{
+        font: 700 2em Arial;
+        color: #1e3791;
+        margin: 20px 0;
+    } 
+}
+.lovepic{
+    background: url('../img/lovebg.jpeg') center / contain no-repeat;
+    height: 50vh;
+    margin: 10px 0;
+}
+.guide{
+    text-align: center;
+    padding: 40px 0;
+}
+.sec4{
+    font: 600 1.4em / 2 Arial;
+}
+.whatch{
+    display: inline-block;
+    color: var(--mavi);
+    margin: 10px 0;
+    padding: 8px 20px;
+}
+.guidepic{
+    background: url('../img/applebg12.jpeg') center / cover no-repeat;
+    height: 50vh;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    
+    .p{
+        font: 0.7em / 2 Arial;
+        padding: 20px 0;
+        img{
+            height: 40px;
+            width: 40px;
+            object-fit: contain;
+            
+        }
+        .zoom{
+            font: 600 2em Arial;
+        }
+    }
+}
+.cards1{
+    text-align: center;
+    width: 50%;
+    padding: 0 10px;
+}
+hr{
+    width: max-content;
+    height: .5px;
+    width: 100%;
+}
+
+.phone {
+    padding: 10px 0;
+    .img1{
+        width: 80%;
+        height: 255px;
+        object-fit: contain;
+        padding: 20px 0 10px 0;
+}
+}
+.f999{
+    margin-top: 20px;
+    font-size: .8em;
+}  
+h1{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+
+}
+.phonecards{
+    padding: 40px 0;
+}
+.ultimate{
+    margin: 10px 0;
+}
+.iconlink{
+    text-align: center;
+}
+.ways{
+    background-color: var(--boz);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.credit, .carrier, .month{
+    background-color: #fff;
+    padding: 10px;
+    margin-block: 20px;
+}
+.emoji1{
+    width: 100%;
+}
+.emoji2{
+    width: 50%;
+}
+.emoji3{
+    width: 60%;
+}
+h5{
+    padding: 30px;
+    font-size: 1.5em;
+}
+.wayscom{
+    color: #6E6E73;
+}
+.emoji1{
+    background: url('../img/savei_phone.jpg') center / contain no-repeat;
+    height: 30vh;
+}
+.emoji2{
+    background: url('../img/appleemoji.jpeg') center / contain no-repeat;
+    height: 20vh;
+    width: 100%;
+}
+.emoji3{
+    background: url('../img/aplepphone.jpeg') center / contain no-repeat;
+    height: 30vh;
+    width: 100%;
+}
+.applebg{
+    background: #fff;
+    margin: 20px 10px;
+    padding: 30px 15px;
+    text-align: center;
+}
+.applebgimg{
+            background: url('../img/applebg6.jpeg') center / cover no-repeat;
+            width: 100%;
+            height: 26vh;
+}
+
+@media only screen and (min-width:768px) {
+    .container{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .shop:hover::after {
+        animation: example 1s linear -.5s forwards ;
+    }
+    .titaniumpic{
+        background: url('../img/titanium-pc.png') center/ contain no-repeat;
+        width: 80%;
+        margin: auto;
+        
+    }
+    .newphoriapic{
+        background: url('../img/newphoria.jpeg') center / contain no-repeat;
+        height: 60vh;
+        margin: auto;
+    }
+    .love1{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .lovepic{
+        background: url('../img/lovebg.jpeg') center / cover no-repeat;
+        width: 50%;
+        height: 100vh;
+    }
+    .lovediv{
+        width: 50%;
+    }
+    .bold{
+        font-size: 3em !important; 
+        font-weight: 700 !important;
+   }
+   .guide{
+        background: url('../img/applebg12.jpeg') center / cover no-repeat;
+        height: 100vh;
+        border-radius: 30px;
+        margin: 20px;
+        position: relative;
+        .guidediv{
+            position: absolute;
+            top: 40%;
+            color: #fff;
+            text-align: left;
+            .whatch{
+                padding: 8px 20px;
+                background-color: rgba(255, 255, 255, 0.763);
+                color: black;
+                border-radius: 50px;
+                font-size: .8em;
+                i{
+                    display: none;
+                }
+        }
+            }
+            
+        }
+        .bold1{
+            font-size: 2.8em;
+        }
+        .guidepic{
+            display: none;
+        }
+        h1{
+            font-size: 3em;
+        }
+        .cards1{
+            width: 25%;
+        }
+        .credit{
+            width: 100%;
+        }
+        .emojiflex{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .applebg{
+            background: url('../img/applebg6.jpeg') center / cover no-repeat;
+            width: 100%;
+            height: 80vh;
+        }
+        .applebgimg{
+            display: none;
+        }
+        .appleheader{
+            max-width: 500px;
+            margin: auto;
+        }
+}      
+   
+
+
+@media only screen and (min-width: 992px) {
+    .love1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .lovediv,
+    .lovepic {
+      width: 50%;
+    }
+    
+    .wayscards{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .credit{
+        width: 100vh;
+    }
+    .credit{
+        width: 60%;
+    } 
+    .carrier, .month{
+        width: 50%;
+    }
+    
+}
+@media only screen and (max-width: 368px) {
+    .cards1{
+        width: 100%;
+    }
+    .shop{
+        font-size: .8em;
+    }
+}
