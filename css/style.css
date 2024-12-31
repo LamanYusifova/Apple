@@ -311,7 +311,7 @@ h5{
 }
 .applebg{
     background: #fff;
-    margin: 20px 10px;
+    margin: 20px 0;
     padding: 30px 15px;
     text-align: center;
 }
@@ -320,6 +320,101 @@ h5{
             width: 100%;
             height: 26vh;
 }
+.magsafe, .magic, .switchcard, .onediv{
+    background-color: #fff;
+    margin: 20px 10px;
+    padding: 10px;
+}
+.tvcard{
+    background-color: #000;
+    color: #fff;
+    margin: 20px 10px;
+    padding: 10px;
+}
+.mag{
+    font-weight: 600;
+    margin: 20px 0 30px 0;
+}
+.magimg{
+    background: url('../img/applephones.jpeg') center / contain no-repeat;
+}
+.airimg{
+    background: url('../img/airtag__b81h4czx41yq_medium.jpg') center / contain no-repeat;
+}
+.resarchimg{
+    background: url('../img/research_app.jpg') center / contain no-repeat;
+}
+.magimg, .airimg, .magicimg, .resarchimg{
+    width: 100%;
+    height: 30vh;
+    margin: 30px 0;
+}
+.magheader {
+    p{
+        max-width: 300px;
+        margin: 15px auto;
+        font: 1.1em / 1.5 Arial;
+    }
+} 
+.airheader p{
+    font-size: 1.1em;
+    margin: 10px;
+}
+.magicimg{
+    background: url('../img/applebg9.jpeg') center / contain no-repeat;
+}
+.delivery{ 
+    padding: 30px;
+    h5{
+    padding: 15px 0;
+}
+}
+.switchimg{
+    background: url('../img/applebg.jpeg') center/ contain no-repeat;
+}
+.privacyimg{
+    background: url('../img/privacy.jpg') center / cover no-repeat;
+}
+.tvimg{
+    background: url('../img/tv-_bg.png') center / cover no-repeat;
+    margin: 10px 0;
+}
+.musicimg{
+    background: url('../img/music_bg.jpg') center 45px/ cover no-repeat;
+    margin: 10px 0;
+}
+.fitnessimg{
+    background: url('../img/fitness_bg.jpg') center / cover no-repeat;
+    margin: 10px 0;
+}
+.arcadeimg {
+    background: url('../img/arcade_bg.png') center / contain no-repeat;
+    margin: 10px 0;
+}
+.newsimg{
+    background: url('../img/news_bg.jpeg') center -100px / cover no-repeat;
+    margin: 10px 0;
+}
+.giftimg{
+    background: url('../img/gift_bg.jpg') bottom / cover no-repeat;
+    margin: 10px 0;
+}
+.switchimg, .privacyimg, .tvimg, .musicimg, .fitnessimg, .arcadeimg, .newsimg, .giftimg{
+    width: 100%;
+    height: 40vh;
+}
+.fa-arrow-up-right-from-square {
+    margin: 0 10px 0 0;
+}
+.oneimglogo{
+    background: url('../img/apple_one.jpg') center / contain no-repeat;
+    height: 40px;
+}
+.m-20{
+    font-size: 1.4em;
+    margin: 20px 0;
+}
+
 
 @media only screen and (min-width:768px) {
     .container{
@@ -425,6 +520,58 @@ h5{
                 font: 600 0.66em Arial;
                 padding: 0 10px;
         }
+        .magsafe{
+            display: flex;
+            align-items: center;
+        }
+        .mag{
+            font-size: 2.8em;
+            
+        }
+        .magheader, .airheader{
+            width: 50%;
+        }
+        .magimg, .airimg{
+            width: 50%;
+            height: 60vh;
+        }
+        .magicimg{
+            height: 50vh;
+        }
+        .airimg{
+            background: url('../img/appleanahtarlik.jpeg') center / contain no-repeat;
+            order: -1;
+        }
+        .iosimg{
+            background: url('../img/ios17.jpg') center / cover no-repeat;
+            width: 100%;
+            height: 50vh;
+        }
+        
+        .switch{
+            display: flex;
+            justify-content: center;
+        }
+        .switchcard, .tvcard, .musiccard{
+            width: 50%;
+        }
+        .onediv{
+            display: flex;
+            align-items: center;
+        }
+        .oneheader{
+            width: 50%;
+        }
+        .oneimg{
+            background: url('../img/applebg2.jpeg') center / contain no-repeat;
+            width: 50%;
+            height: 50vh;
+        }
+        .resarchimg{
+            width: 50%;
+            height: 60vh;
+            margin: 30px 0;
+        }
         
         
 }      
@@ -456,7 +603,23 @@ h5{
     .carrier, .month{
         width: 50%;
     }
+    .services{
+        display: flex;
+        flex-wrap: wrap;
+        .delivery{
+            width: 33.33%;
+        }
+    }
     
+}
+@media only screen and (min-width: 576px) {
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .delivery {
+        width: 50%;
+    }
 }
 @media only screen and (max-width: 368px) {
     .cards1{
