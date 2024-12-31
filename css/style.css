@@ -19,11 +19,19 @@ nav{
     img{
         width: 20px;
     }
+    
 }
 .search img{
-    margin: 0 5px;
-    width: 16px;
+        margin: 0 5px;
+        width: 16px;
+    }
+    
+nav{
+    menu{
+        display: none;
+    }
 }
+
 ::-webkit-scrollbar{
     display: none;
 }
@@ -38,14 +46,9 @@ nav{
     width: 100%;
     background-color: white;
     transition: .3s;
-    menu{
-        padding: 20px 30px;
-        li{
-            padding: 10px 0;
-            a{
-                font-size: 19.2px;
-            }
-        }
+    ul{
+        padding: 20px 40px;
+        font: 1.2em / 2 Arial;
     }
     
 }
@@ -412,6 +415,18 @@ h5{
             max-width: 500px;
             margin: auto;
         }
+        .search label{
+            display: none;
+        }
+        nav menu{
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                font: 600 0.66em Arial;
+                padding: 0 10px;
+        }
+        
+        
 }      
    
 
