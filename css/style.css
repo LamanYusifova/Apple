@@ -31,8 +31,7 @@ nav{
         display: none;
     }
 }
-
-::-webkit-scrollbar{
+.slider::-webkit-scrollbar{
     display: none;
 }
 #inp{
@@ -49,8 +48,7 @@ nav{
     ul{
         padding: 20px 40px;
         font: 1.2em / 2 Arial;
-    }
-    
+    } 
 }
 .new{
     font: .8em Arial, Helvetica, sans-serif;
@@ -76,10 +74,7 @@ nav{
         p{
             font: 11.2px Arial, Helvetica, sans-serif;
         }
-        
     }
-
-
 }
 .header3{
     background-color: var(--boz);
@@ -87,8 +82,7 @@ nav{
     padding: 20px 0;
     p{
         font-size: 20.8px;
-    }
-    
+    } 
 }
 .shop{
     display: inline-block;
@@ -106,11 +100,9 @@ nav{
     margin: 5px 0;
     background: transparent;  
 }
-
 .shop:active::after{
-    animation: example 1s  linear forwards ;
+    animation: example .5s  linear forwards ;
 }
-
 @keyframes example {
     0% {
         background: transparent;
@@ -156,10 +148,10 @@ h6{
     border-radius: 30px;
     transition: .5s;
 }
-#sec2btn:hover {
+.btn3:hover {
     box-shadow: 3px 5px 7px #010e42;
 }
-.btn:hover {
+.btn2:hover {
     box-shadow: 3px 5px 7px rgb(172, 185, 236);
 }
 .shop:hover::after {
@@ -241,7 +233,6 @@ h2{
     padding: 0 10px;
 }
 hr{
-    width: max-content;
     height: .5px;
     width: 100%;
 }
@@ -420,6 +411,74 @@ h5{
     font-size: 1.4em;
     margin: 20px 0;
 }
+.footer{
+    padding: 20px 0;
+    font-size: 0.9em;
+    color: #0000007a;
+    text-align: justify;
+}
+ol{
+    padding: 0 0 30px 30px;
+}
+#shopmenu, #applemenu, #accountmenu, #entermenu ,#appsmenu, #fbusmenu, #fedcmenu, #fhealthmenu, #fgovermenu, #valuesmenu, #valuesmenu1{
+    display: none;
+}
+.footlogo{
+    margin: 30px 0 20px 16px;
+    a{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    .fa-apple{
+        font-size: 1.5rem;
+        color: #000;
+    }
+}
+.footermenu{
+    color: #000000BD;
+}
+.footerp{
+    padding: 0 0 15px 0;
+    font-size: .9em;
+}
+.moreway{
+    color: var(--mavi);
+    text-decoration: underline;
+}
+.footernav {
+    max-height: 0;
+    overflow: hidden;
+    line-height: 1.5em;
+    transition: 0.3s;
+  }
+.flabel{
+    display: flex;
+    justify-content: space-between;
+    a {
+    font: 500 1em Arial ;
+}}
+.open:checked ~ .footernav{
+    max-height: 250px;
+}
+.footabout{
+    padding: 30px 20px;
+}
+.copyright p{
+    padding: 5px 0;
+}
+.fprivacy{
+    display: flex ;
+    gap: 10px;
+    li{
+    border-left: 1px solid #000;
+    padding: 0 0 0 5px;
+    }
+  }
+.fprivacy li:first-child{
+    border-left: none;
+    padding: 0;
+  }
 
 
 @media only screen and (min-width:768px) {
@@ -519,7 +578,7 @@ h5{
         nav menu{
                 display: flex;
                 justify-content: space-between;
-                gap: 20px;
+                gap: 17px;
                 font: 600 0.66em Arial;
                 padding: 0 10px;
         }
@@ -568,7 +627,6 @@ h5{
             width: 100%;
             height: 50vh;
         }
-        
         .switch{
             display: flex;
             justify-content: center;
@@ -592,8 +650,42 @@ h5{
             width: 50%;
             height: 60vh;
             margin: 30px 0;
+        }   
+        .carrier, .month{
+            width: 50%;
+        }
+        .footabout{
+            display: flex;
+            justify-content: space-between;
+        }
+        .shopapple, .accountent, .appstore, .for, .appvalues{
+            width: 20%;
+            padding: 16px 20px;
         }
         
+        .footernav{
+            max-height: 250px;
+             li{
+            padding: 2px 0;
+         a{
+            font-size: .9em ;
+        }
+    }}
+        .footernav li:nth-last-child(1) {
+            padding: 0 0 16px 0;
+        }
+        .copyright {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            font-size: .9em;
+            p {
+              padding: 0 5px;
+            }
+          }
+          label .fa-chevron-down{
+            display: none;
+          }
         
 }      
    
@@ -620,9 +712,6 @@ h5{
     }
     .credit{
         width: 60%;
-    } 
-    .carrier, .month{
-        width: 50%;
     }
     .services{
         display: flex;
