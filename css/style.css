@@ -15,7 +15,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 3%;
+    padding: 20px 0;
     img{
         width: 20px;
     }
@@ -94,8 +94,7 @@ nav{
     display: inline-block;
     width: max-content;
     padding: 15px 0;
-    color: var(--mavi);
-    
+    color: var(--mavi);  
 }
 
 
@@ -106,8 +105,7 @@ nav{
     bottom: 0px;
     left: 0;
     height: 3px;
-    background: transparent;
-    
+    background: transparent;  
 }
 
 .shop:active::after{
@@ -123,7 +121,6 @@ nav{
         background: linear-gradient(90deg, rgba(255,255,0,1) 25%, rgba(255,165,0,1) 50%, rgba(0,128,0,1) 75%, rgba(0,0,255,1) 100%);
         width:100% 
     }
-
 }
 .titaniumbasliq{
     background-color: #000;
@@ -153,11 +150,21 @@ h6{
 }
 .btn{
     background-color: var(--mavi);
-    color: white;
-    border: none;
+    color: #fff;
+    border: 2px solid transparent;
     padding: 10px 25px;
     margin: 10px 0;
     border-radius: 30px;
+    transition: .5s;
+}
+#sec2btn:hover {
+    box-shadow: 3px 5px 7px #010e42;
+}
+.btn:hover {
+    box-shadow: 3px 5px 7px rgb(172, 185, 236);
+}
+.shop:hover::after {
+    animation: example 1s linear -.5s forwards ;
 }
 .newphoria{
     text-align: center;
@@ -421,9 +428,6 @@ h5{
         max-width: 1200px;
         margin: auto;
     }
-    .shop:hover::after {
-        animation: example 1s linear -.5s forwards ;
-    }
     .titaniumpic{
         background: url('../img/titanium-pc.png') center/ contain no-repeat;
         width: 80%;
@@ -520,6 +524,24 @@ h5{
                 font: 600 0.66em Arial;
                 padding: 0 10px;
         }
+        menu a{
+            position: relative;
+            padding: 5px 0;
+        }
+        menu a::before {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 2px;
+            left: 50%;
+            bottom: 0;
+            background-color: #624d4d;
+            transition: all ease-in-out 0.2s;
+          }
+        menu a:hover::before {
+            width: 100%;
+            left: 0;
+          }
         .magsafe{
             display: flex;
             align-items: center;
