@@ -437,9 +437,10 @@ ol{
 }
 .footermenu{
     color: #000000BD;
+    font-size: .98em;
 }
 .footerp{
-    padding: 0 0 15px 0;
+    margin: 20px 0;
     font-size: .9em;
 }
 .moreway{
@@ -448,28 +449,29 @@ ol{
 }
 .footernav {
     max-height: 0;
+    padding: 0 20px;
     overflow: hidden;
     line-height: 1.5em;
     transition: 0.3s;
+    li{
+        padding: 5px 0;
+    }
   }
 .flabel{
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #00000044;
+    padding: 16px 20px;
     a {
     font: 500 1em Arial ;
 }}
 .open:checked ~ .footernav{
-    max-height: 250px;
+    max-height: 350px;
 }
 
 .copyright p{
     padding: 5px 0;
 }
-  .footabout{
-    margin: 0 20px;
-  }
-
-
 @media only screen and (min-width:768px) {
     .container{
         max-width: 1200px;
@@ -646,12 +648,10 @@ ol{
         .footabout{
             display: flex;
             justify-content: space-between;
-            margin: 0 ;
               
         }
         .shopapple, .accountent, .appstore, .for, .appvalues{
             width: 20%;
-            padding: 16px 20px;
         }
         
         .footernav{
@@ -662,9 +662,6 @@ ol{
             font-size: .9em ;
         }
     }}
-        .footernav li:nth-last-child(1) {
-            padding: 0 0 16px 0;
-        }
         .copyright {
             display: flex;
             justify-content: space-between;
@@ -673,6 +670,10 @@ ol{
             p {
               padding: 0 5px;
             }
+          }
+          .flabel{
+            border-bottom: none;
+
           }
           .flabel .fa-chevron-down{
             display: none;
